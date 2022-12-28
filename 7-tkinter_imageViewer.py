@@ -4,6 +4,7 @@ from tkinter import *
 # NEED TO INSTALL VIA PIP
 # pip install Pillow
 from PIL import ImageTk, Image
+import os
 
 
 # Create the Root Widget
@@ -16,10 +17,10 @@ root.title('Image Viewer')
 root.iconbitmap('/Users/tk24535/Desktop/capture-one-22-icon.ico')
 
 # Create image variables for each image
-my_img1 = ImageTk.PhotoImage(Image.open("Images/gameboy_kirby.jpeg"))
-my_img2 = ImageTk.PhotoImage(Image.open("Images/vinylrecord1.jpeg"))
-my_img3 = ImageTk.PhotoImage(Image.open("Images/Tenable_Network_Security.png"))
-my_img4 = ImageTk.PhotoImage(Image.open("Images/lotta-icon.png"))
+my_img1 = ImageTk.PhotoImage(Image.open("/Users/nicholasfoerster/Dropbox/Git/Tkinter_Class/Images/gameboy_kirby.jpeg"))
+my_img2 = ImageTk.PhotoImage(Image.open("/Users/nicholasfoerster/Dropbox/Git/Tkinter_Class/Images/vinylrecord1.jpeg"))
+my_img3 = ImageTk.PhotoImage(Image.open("/Users/nicholasfoerster/Dropbox/Git/Tkinter_Class/Images/Tenable_Network_Security.png"))
+my_img4 = ImageTk.PhotoImage(Image.open("/Users/nicholasfoerster/Dropbox/Git/Tkinter_Class/Images/lotta-icon.png"))
 
 image_list = [my_img1, my_img2, my_img3, my_img4]
 
